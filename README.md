@@ -7,8 +7,12 @@
 
 
 <h2 align="center"> 📖Descrição do Projeto</h2>
-O objetivo central do projeto é funcionar como um to-do list clássico, com sistema de tarefas por dia, categorias e a possibilidade de marcá-las como concluídas.
 
+Projeto consiste em ser uma lista de tarefas com uma página inicial onde há as tarefas diárias, setas que direcionam os dias avançando ou retornando os dias, elas funcionam de forma dinâmica então as tarefas são específicas daquele dia.
+
+Contém também páginas de criação de tarefas e categorias para serem atribuidas e também um sistema de login funcional contendo página de registro e página de login.
+
+O objetivo central do projeto é funcionar como um to-do list clássico, com sistema de tarefas por dia, categorias e a possibilidade de marcá-las como concluídas para ter um maior controle das tarefas a serem feitas naquele dia ou em dias posteriores.
 
 ### Pré-requisitos
 
@@ -26,6 +30,12 @@ $ git clone https://github.com/Gustavopnhro/pine-todo-test.git
 $ composer install
 
 # Inicie o MySQL
+
+# Renomeie o 'env.example' para '.env' e configure o .env (App Key)
+$ php artisan key:generate
+
+# Execute os migration
+$ php artisan migrate:fresh
 
 # Execute a aplicação em modo de desenvolvimento
 $ php artisan serve
