@@ -1,7 +1,6 @@
 <h1 align="center"> 🌲 Pine To-Do 🌲 </h1>
 
 <p align="center">
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 <h2 align="center"> Status: ✅ Concluído </h2>
 
@@ -21,23 +20,21 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 
 ```bash
 # Clone este repositório
-$ git clone <https://github.com/tgmarinho/nlw1>
-
-# Acesse a pasta do projeto no terminal/cmd
-$ cd nlw1
-
-# Vá para a pasta server
-$ cd server
+$ git clone https://github.com/Gustavopnhro/pine-todo-test.git
 
 # Instale as dependências
-$ npm install
+$ composer install
+
+# Inicie o MySQL
 
 # Execute a aplicação em modo de desenvolvimento
-$ npm run dev:server
+$ php artisan serve
 
-# O servidor inciará na porta:3333 - acesse <http://localhost:3333>
+# O servidor inciará na porta:8000 - acesse <http://localhost:8000>
+```
 
 <h2 align="center">⚙️ Funcionalidades </h2>
+
 #### ✅ Sistema de cadastro/login funcional
 #### ✅ Cadastro de Tarefas
 #### ✅ Cadastro de Categorias
