@@ -1,0 +1,498 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+:root {
+    --background-light: #f2ebfb;
+    --background-white: #ced4da;
+    --background-white-dark:  #adb5bd;   
+    --text-dark: #344e41;
+    --color-primary: #386641;
+    --color-secondary: #588157;
+    --color-secondary-dark: #315939;
+    --color-seconday-light: #cfe1b9;
+
+    /* --background-light: #f2ebfb;
+    --background-white: #f4effa;
+    --text-dark: #0A0040;
+    --color-primary: #6143FF;
+    --color-secondary: #907ad6; */
+}
+
+body {
+    background-color: var(--background-light);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container>nav {
+    padding: 1rem 4rem;
+    margin-bottom: 1rem;
+    height: 100px;
+    background-color: var(--color-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+
+
+.container>nav>a {
+    height: 100%;
+}
+
+.container>nav>a>img {
+    height: 100%;
+    background-color: var(--color-primary);
+    border-radius: 100%;
+    padding: 3px;
+}
+
+.btn {
+    border: 0;
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    margin-right: 1rem;
+
+    background-color: var(--background-white);
+    box-shadow: 3px 5px var(--background-white-dark);
+    color: var(--text-dark);
+}
+
+.primaryButton {
+    color: var(--background-light);
+    box-shadow: 3px 5px var(--color-secondary-dark);
+    background-color: var(--color-primary);
+    
+
+}
+
+
+
+.btn:hover {
+    /* transform: scale(1.050); */
+    box-shadow: 0px 0px var(--color-secondary-dark);
+    transform: translateX(10px);
+    transform: translateY(5px);
+
+
+
+}
+.btn a {
+    text-decoration: none;
+    color: var(--background-light);
+}
+
+.btn>input{
+    cursor: pointer;
+    color: var(--background-light);
+    background-color: var(--color-primary);
+    border: none;
+}
+
+.logoutButton {
+    background: #b90504;
+    box-shadow: 3px 5px #990100;
+
+}
+
+
+main {
+    display: flex;
+}
+
+section.graph {
+    width: 33%;
+    padding: 1rem;
+
+}
+
+/*Graph Header Start*/
+.graphHeader {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.graphHeader h2 {
+    display: inline-block;
+    margin: 0;
+    font-size: 20px;
+    color: var(--text-dark);
+
+}
+
+.graphHeaderDate{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    margin-top: 0.5rem;
+    color: var(--text-dark);
+
+}
+
+.graphHeaderDate img{
+    width: 7px;
+    margin: 0px 0.6rem;
+    cursor: pointer;
+}
+
+
+/*Graph Header Subtitle*/
+.graphHeaderSubtitle{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    color: var(--text-dark);
+}
+
+.graphHeaderSubtitle>p{
+    font-size: 20px;
+}
+
+
+/*Graph Placeholder*/
+.graphPlaceholder{
+    margin-top: 1rem;
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.graphProgress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+    height: 20rem;
+    background-color: var(--color-secondary);
+    border-radius: 100%;
+}
+
+.graphProgressTasks{
+    width: 70%;
+    height: 70%;
+    background-color: var(--background-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    border: 10px solid var(--text-dark);
+
+}
+
+.graphProgressTasks>p {
+    color: var(--text-dark);
+    font-size: 50px;
+}
+
+/*Tasks Left*/
+.tasksLeft {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+    font-size: 16px;
+    color: var(--text-dark);
+
+}
+
+.tasksLeft img {
+    height: 1rem;
+    margin-right: 0.8rem;
+}
+
+/*SECTION List*/
+
+section.list {
+    padding: 20px 15px; 
+    flex: 1;
+}
+
+.taskHeaderList {
+    background-color: var(--background-light);
+    border: none;
+    color: var(--text-dark);
+}
+
+
+.taskList {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.task {
+    background-color: var(--color-seconday-light);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-bottom: 3px solid var(--color-primary);
+    padding: 0.8rem;
+    border-radius: 5px;
+    transition: all .2s ease-in-out;
+    color: var(--text-dark);
+    
+
+}
+
+.task:hover{
+    
+    transform: scale(1.010);
+    color: var(--background-light);
+    background-color: var(--color-secondary);
+    overflow: hidden;
+
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    
+}
+
+.title .taskTitle{
+    padding-left: 1rem;
+}
+
+.priority, .actions{
+    flex: 1;
+}
+
+.priority{
+    display: flex;
+    align-items: center;
+}
+
+.priority .sphere {
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.actions a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-seconday-light);
+    padding: 10px;
+    border-radius: 100%;
+    margin-left: 1rem;
+}
+
+.actions a img {
+    width: 20px;
+    height: 22px;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    color: var(--text-dark);
+}
+
+
+/*Task Create Page Start*/
+
+.formHeader{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    color: var(--text-dark);
+
+}
+
+.formHeader>h2 {
+    margin-bottom: 1rem;
+}
+
+.formHeader>form {
+    width: 30vw;
+}
+
+.inputArea {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputArea>label {
+    margin: 0.4rem 0rem;
+    margin-left: 10px;
+
+}
+
+.inputArea>input {
+    border: none;
+    border-radius: 1rem;
+    width: 100%;
+    padding: 1rem;
+}
+
+.inputArea>input::placeholder{
+    color: var(--color-primary);
+}
+
+.inputArea>input:focus{
+    outline-color: var(--color-secondary);
+}
+
+.inputArea>select{
+    border-color: var(--color-secondary);
+    padding: 1rem;
+    border-radius: 1rem;
+    color: var(--color-primary);
+}
+
+.inputArea>select>focus{
+    outline: none;
+
+}
+
+#color {
+    width: 50%;
+    padding: 0;
+
+}
+
+.radioArea>label {
+    margin-right: 1rem;
+}
+
+.error {
+    color: red;
+}
+
+/*Category Page Start*/
+.categoryList {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    width: 100%;
+    align-items: center;
+    height: 70vh;
+
+}
+
+.categoryList>h2 {
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.category {
+    background-color: var(--color-seconday-light);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-bottom: 3px solid var(--color-primary);
+    padding: 0.8rem;
+    border-radius: 5px;
+    transition: all .2s ease-in-out;
+    color: var(--text-dark);
+    width: 30%;
+    
+
+}
+
+.category:hover{
+    
+    transform: scale(1.010);
+    color: var(--background-light);
+    background-color: var(--color-secondary);
+    overflow: hidden;
+
+}
+
+@media screen and (max-width: 800px) {
+    
+    /* Nav and TopButtons */
+    .container nav {
+        height: 80px;
+        padding: 1rem;
+    }
+
+    .btn {
+        padding: 12px;
+        font-size: 12px;
+        margin-right: 0.5rem;
+    }
+
+    /* Graph Section */
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.graph {
+        width: 100%;
+    }
+
+    .graphProgress {
+        width: 15rem;
+        height: 14rem;
+    }
+
+
+    /*List Section*/
+    section.list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    /*Form Items*/
+
+    .formHeader>form {
+        width: 90vw;
+    }
+
+    #color {
+        width: 30%;
+        padding: 0;
+
+    }
+
+   /*Category Section*/
+   .category {
+        width: 90%;
+   }
+
+   /*Footer*/
+   footer {
+    padding: 1rem;
+
+   }
+}
