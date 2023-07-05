@@ -17,7 +17,7 @@ O objetivo central do projeto é funcionar como um to-do list clássico, com sis
 ### Pré-requisitos
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com), [Composer](https://getcomposer.org/), [Laravel](https://laravel.com/), [MySQL](https://www.mysql.com/downloads/). 
+[Git](https://git-scm.com v.2.40.0), [Composer v.2.5.5](https://getcomposer.org/), [Laravel v.4.5.0](https://laravel.com/), [MySQL v.8.2.4](https://www.mysql.com/downloads/). 
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
 ### 🎲 Rodando o Back End
@@ -65,8 +65,11 @@ $ php artisan serve
 
 <h2 align="center"> ⚒️ Ferramentas </h2>
 
-#### PHP
+#### Composer v.2.5.5
+#### Git v.2.40.0
+#### Laravel v.4.5.0
+#### PHP v.8.2.4
 #### HTML
 #### CSS
-#### MySQL
+#### MySQL v.8.2.4
 
