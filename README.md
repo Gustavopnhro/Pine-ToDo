@@ -53,12 +53,11 @@ $ php artisan serve
 #### ✅ Tela dinâmica
 
 <h2 align="center"> 🖥️ Preview </h2>
+<h3 align="center"> Home </h3>
 <img src="./readme_img/HomePreview.PNG" alt="Previw"></img>
-<br>
-<br>
+<h3 align="center"> Tela de Login </h3>
 <img src="./readme_img/LoginPreview.PNG" alt="Previw"></img>
-<br>
-<br>
+<h3 align="center"> Tela de Registro </h3>
 <img src="./readme_img/RegisterPreview.PNG" alt="Previw"></img>
 
 
